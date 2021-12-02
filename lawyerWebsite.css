@@ -15,6 +15,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'lane';
+    src: url('./font/LANENAR_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root{
     --primary: #888;
@@ -37,12 +43,10 @@ body {
     background: rgb(223, 223, 223);
     font-family: 'rajdhani';
     width: 100%;
-    /* min-height: 1200px; */
 }
 
 #navigation {
     background: var(--secondary);
-    border: 2px solid var(--dark);
     text-decoration: none;
     width: 100%;
     display: flex;
@@ -61,13 +65,13 @@ body {
     font-size: 30px;
     font-weight: bold;
     list-style-type: none;
-    grid-gap: 50px;
+    gap: 50px;
 }
 
 ul li a {
     text-decoration: none;
     color:#333;
-    grid-gap: 50px;
+    gap: 50px;
 }
 
 ul li a:hover {
@@ -88,7 +92,7 @@ ul li a:hover {
     height: 100px;
     border-radius: 100%;
     background: var(--secondary);
-    box-shadow: 0 0 5px 1px black, 0 0 5px 1px black;
+    box-shadow: 0 0 5px 1px #333, 0 0 5px 1px #333;
 }
 
 #mainDiv {
@@ -177,7 +181,7 @@ ul li a:hover {
 h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: black;
+    color: #333;
 }
 
 #image2 {
@@ -217,7 +221,7 @@ h3 {
     height: 220px;
     background: #bbb;
     box-shadow: 0 -1px 5px #888;
-    border: 2px solid var(--dark);
+    /* border: 2px solid var(--dark); */
     display: flex;
     justify-content: center;
     align-items: center;
