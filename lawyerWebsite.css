@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-
+ */
 @font-face {
-    font-family: 'aaargh';
-    src: url('./font/Aaargh-webfont.woff') format('woff');
+    font-family: 'barlow';
+    src: url('./font/Barlow-Regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -54,6 +54,9 @@ body {
     justify-content: space-evenly;
     z-index: 1;
     box-shadow: var(--shadow2);
+    /* border-bottom: 2px solid #aaa; */
+    border-bottom: 4px solid #eee;
+    font-family: 'barlow';
 }
 
 #navigation ul {
@@ -63,7 +66,7 @@ body {
     text-transform: capitalize;
     line-height: 120px;
     font-size: 30px;
-    font-weight: bold;
+    /* font-weight: bold; */
     list-style-type: none;
     gap: 50px;
 }
@@ -104,6 +107,8 @@ ul li a:hover {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    /* background: linear-gradient(rgb(200, 200, 200),rgb(230, 230, 230)); */
+    background: rgb(216, 216, 216);
 }
 
 #container {
@@ -119,21 +124,24 @@ ul li a:hover {
     align-items: center;
     background: var(--container);
     padding: 50px 70px;
-    border: 2px solid var(--secondary);
-    box-shadow: var(--shadow2);
+    /* border: 2px solid var(--secondary);
+    box-shadow: var(--shadow2); */
+    box-shadow: 0 0 3px #bbb, inset 0 0 6px #888;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
     z-index: 1;
+    border: 4px solid #eee;
 }
 
 #headline {
-    text-shadow: 0 3px 3px rgb(148, 148, 148), 0 3px 3px rgb(126, 126, 126);
-    font-size: 72px;
+    text-shadow: 0 0 8px rgb(148, 148, 148), 0 0 3px rgb(126, 126, 126);
+    font-size: 68px;
     color: #fff;
     margin-top: 40px;
     text-transform: uppercase;
     z-index: 1;
     margin-bottom: 40px;
+    font-family: 'barlow';
 }
 
 #headline_h2 {
@@ -158,7 +166,7 @@ ul li a:hover {
     grid-gap: 25px;
     font-family: 'rajdhani';
     z-index: 1;
-    color: rgb(42, 42, 42);
+    color: #333;
     grid-template-columns: repeat(4, 1fr);
 }
 .boks{
@@ -166,8 +174,10 @@ ul li a:hover {
     text-align: center;
     font-weight: bold;
     padding: 32px 20px;
-    box-shadow: var(--shadow2);
-    border: 2px solid var(--secondary);
+    /* box-shadow: var(--shadow2);
+    border: 2px solid var(--secondary); */
+    box-shadow: 0 0 3px #bbb, inset 0 0 6px #888;
+    border: 4px solid #eee;
 }
 
 #firstBox {
@@ -192,7 +202,8 @@ h3 {
 }
 
 #paragraphBottom {
-    font-family: 'Dosis', sans-serif;
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'rajdhani';
     margin-top: 70px;
     margin-bottom: 70px;
     width: 85%;
@@ -226,9 +237,12 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 30px;
+    /* font-weight: bold; */
     z-index: 1;
+    color: #333;
+    border-top: 4px solid #fff;
+    font-family: 'barlow';
 }
 
 #footerh6 {
@@ -344,7 +358,7 @@ h3 {
 
 @media(max-width:600px) {
     #headline {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     #headline_h2, #headline_h1 {
@@ -387,7 +401,7 @@ h3 {
     }
 
     #headline {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
