@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 @font-face {
-    font-family: 'aaargh';
-    src: url('./font/Aaargh-webfont.woff') format('woff');
+    font-family: 'barlow';
+    src: url('./font/Barlow-Regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -35,7 +35,6 @@
 body {
     background: rgb(223, 223, 223);
     font-family: 'rajdhani';
-    line-height: 1.4;
 }
 
 #navigation {
@@ -48,6 +47,8 @@ body {
     justify-content: space-evenly;
     z-index: 1;
     box-shadow: var(--shadow2);
+    border-bottom: 5px solid #eee;
+    font-family: 'barlow';
 }
 
 #navigation ul {
@@ -57,7 +58,6 @@ body {
     text-transform: capitalize;
     line-height: 120px;
     font-size: 30px;
-    font-weight: bold;
     list-style-type: none;
     gap: 50px;
 }
@@ -98,6 +98,7 @@ ul li a:hover {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    background: rgb(216, 216, 216);
 }
 
 #container {
@@ -113,21 +114,24 @@ ul li a:hover {
     align-items: center;
     background: var(--container);
     padding: 50px 70px;
-    border: 2px solid var(--secondary);
-    box-shadow: var(--shadow2);
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
     z-index: 1;
+    font-family: 'barlow';
+    box-shadow:inset 0 0 3px #ccc;
+    border: 5px solid #fff;
 }
 
 #headline {
-    text-shadow: 0 3px 3px rgb(148, 148, 148), 0 3px 3px rgb(126, 126, 126);
-    font-size: 72px;
+    text-shadow: 0 0 8px rgb(148, 148, 148), 0 0 3px rgb(126, 126, 126);
+    font-size: 68px;
     color: #fff;
     margin-top: 40px;
     text-transform: uppercase;
+    line-height: 1.4;
     z-index: 1;
     margin-bottom: 40px;
+    font-family: 'barlow';
 }
 
 #imagesAndText {
@@ -229,6 +233,10 @@ h3 {
     font-size: 32px;
     font-weight: bold;
     z-index: 1;
+    color: #333;
+    border-top: 4px solid #fff;
+    font-family: 'barlow';
+    line-height: 1.4;
 }
 
 #footerh6 {
@@ -330,22 +338,18 @@ span {
 
 @media(max-width:600px) {
     #mainWrapper {
-        width: 96%;
+        width: 100%;
+        border-radius: 0;
     }
     #headline {
-        font-size: 36px;
+        font-size: 32px;
     }
 }
 
 @media(max-width:450px) {
 
     #headline {
-        font-size: 30px;
-    }
-
-    #mainWrapper {
-        border-top-right-radius: 42px;
-        border-top-left-radius: 42px;
+        font-size: 26.5px;
     }
 
     #mainWrapper {
@@ -363,7 +367,7 @@ span {
 
 @media(max-width:365px) {
     #headline {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     #mainWrapper {
