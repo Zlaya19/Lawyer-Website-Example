@@ -23,7 +23,7 @@
 }
 
 :root{
-    --primary: #888;
+    --primary: #9f7e7e;
     --secondary: #ccc;
     --container: #eee;
     --dark: #999;
@@ -232,7 +232,7 @@ h3 {
 #footerDiv {
     width: 100%;
     height: 220px;
-    background: #bbb;
+    background: #c0609b;
     box-shadow: 0 -1px 5px #888;
     /* border: 2px solid var(--dark); */
     display: flex;
