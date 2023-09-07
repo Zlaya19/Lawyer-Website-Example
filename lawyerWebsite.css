@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
  */
+
 @font-face {
     font-family: 'barlow';
     src: url('./font/Barlow-Regular-webfont.woff') format('woff');
@@ -22,14 +23,14 @@
     font-style: normal;
 }
 
-:root{
+:root {
     --primary: #888;
     --secondary: #ccc;
     --container: #eee;
     --dark: #999;
     --light: #fff;
     --shadow: 0 1px 5px rgba(110, 110, 110, 0.8);
-    --shadow2:  0 1px 5px #888;
+    --shadow2: 0 1px 5px #888;
 }
 
 * {
@@ -73,7 +74,7 @@ body {
 
 ul li a {
     text-decoration: none;
-    color:#333;
+    color: #333;
     gap: 50px;
 }
 
@@ -127,7 +128,7 @@ ul li a:hover {
     /* border: 2px solid var(--secondary);
     box-shadow: var(--shadow2); */
     /* box-shadow: 0 0 3px #bbb, inset 0 0 6px #888; */
-    box-shadow:inset 0 0 3px #ccc;
+    box-shadow: inset 0 0 3px #ccc;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
     z-index: 1;
@@ -153,13 +154,13 @@ ul li a:hover {
 }
 
 #paragraph {
-    color:#333;
+    color: #333;
     font-size: 18px;
     font-weight: 600;
     font-family: 'rajdhani';
 }
 
-.boksovi{
+.boksovi {
     width: 85%;
     min-height: 200px;
     margin-top: 25px;
@@ -170,7 +171,8 @@ ul li a:hover {
     color: #333;
     grid-template-columns: repeat(4, 1fr);
 }
-.boks{
+
+.boks {
     background: #eee;
     text-align: center;
     font-weight: bold;
@@ -178,7 +180,7 @@ ul li a:hover {
     /* box-shadow: var(--shadow2);
     border: 2px solid var(--secondary); */
     /* box-shadow: 0 0 3px #bbb, inset 0 0 6px #888; */
-    box-shadow:inset 0 0 3px #ccc;
+    box-shadow: inset 0 0 3px #ccc;
     border: 5px solid #fff;
 }
 
@@ -225,8 +227,12 @@ h3 {
 }
 
 @keyframes slider {
-    0%  {left: -1000px}
-    100% {left: 0}
+    0% {
+        left: -1000px
+    }
+    100% {
+        left: 0
+    }
 }
 
 #footerDiv {
@@ -256,29 +262,24 @@ h3 {
     font-size: 32px;
 }
 
-
-@media(max-width:1250px){
+@media(max-width:1250px) {
     .boksovi {
         grid-template-columns: repeat(2, 1fr);
-    } 
-
+    }
     #firstBox {
         border-bottom-left-radius: 0px;
     }
-
     #thirdBox {
         border-bottom-left-radius: 20px;
     }
-
 }
 
-@media(max-width:1100px){
-
+@media(max-width:1100px) {
     #navigation {
         flex-direction: column;
         padding: 10px;
     }
-/* 
+    /* 
     #footerDiv {
         width: 1100px;
     }
@@ -289,143 +290,115 @@ h3 {
     #mainWrapper {
         width: 800px;
     }*/
-    
-
     #headline {
         font-size: 42px;
         text-align: center;
     }
-
     #image2 {
         margin: 1200px 0 0 -500px;
         position: absolute;
         width: 600px;
     }
-
     .fa {
         font-size: 3em;
     }
-
 }
 
-
 @media(max-width:800px) {
-
     #navigation {
         flex-direction: column;
     }
-
     #mainWrapper {
         padding: 50px 50px;
     }
-
     ul#list {
         flex-direction: column;
         grid-gap: 0px;
         line-height: 50px;
         font-size: 36px;
     }
-
     #image1 {
         display: none;
     }
-
     #headline {
         font-size: 42px;
         text-align: center;
     }
-
     .boks {
         padding: 16px 10px;
     }
-
     h3 {
         font-size: 20px;
         margin-bottom: 6px;
     }
-
     .paragraphBox {
         font-size: 14px;
     }
-
     #paragraph {
         font-size: 17px;
     }
-
     #paragraphContainer {
         font-size: 18px;
+        color: cyan;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-
 }
 
 @media(max-width:600px) {
     #headline {
         font-size: 34px;
     }
-
-    #headline_h2, #headline_h1 {
+    #headline_h2,
+    #headline_h1 {
         font-size: 20px;
         margin-bottom: 15px;
     }
 }
 
-
 @media(max-width:500px) {
     .fa {
         font-size: 2em;
     }
-
     #mainWrapper {
         padding: 50px 30px 30px 30px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         width: 100%;
     }
-
     .boksovi {
         width: 100%;
     }
-
     h3 {
         font-size: 16px;
     }
-
     .paragraphBox {
         font-size: 13px;
     }
-
     #paragraph {
         font-size: 15px;
     }
-
     #paragraphContainer {
         font-size: 15px;
     }
-
     #paragraphBottom {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-
 }
 
 @media(max-width:490px) {
-    
     #headline {
         font-size: 26px;
     }
 }
 
 @media(max-width:400px) {
-
     h3 {
         font-size: 15px;
     }
-
     .paragraphBox {
         font-size: 12px;
     }
-
 }
 
 @media(max-width: 365px) {
