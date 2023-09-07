@@ -1,5 +1,5 @@
 # Lawyer-Website-Example
-Just a simple lawyer website with html and css
+Just a simple lawyer website with html and css.
 
 ![](images/1.png)
 
